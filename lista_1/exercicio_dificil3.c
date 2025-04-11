@@ -1,13 +1,16 @@
 #include <stdio.h>
-#include <math.h>
 
-int main(){
-    double salario_min = 1412, salario_jose = 4500, qtd_salario = 0;
+int main() {
+    float salario = 0.0;
+    scanf("%f", &salario);
     
-    qtd_salario = salario_jose / salario_min;
-    printf("O salário mínimo atualmente é de: %.1lf \n", salario_min);
-    printf("O salário de José atualmente é de: %.1lf \n", salario_jose);
-    printf("Atualmente José recebe: %1.f salários mínimos.", qtd_salario);
+    printf("%f\n%f\n%f\n", salario, salario, salario);
+
+    salario *= 1.05;
+    printf("%f\n%f\n%f\n%f\n%f\n", salario, salario, salario, salario, salario);
+    
+    salario *= 1.039;
+    printf("%f\n%f\n%f\n%f", salario, salario, salario, salario);
     
     return 0;
 }

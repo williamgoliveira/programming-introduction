@@ -1,10 +1,11 @@
 #include <stdio.h>
 
 int main(){
-    int x = 100000;
+    int x;
+    scanf("%d", &x);
     x = x % 3;
     
-    printf("O resto da divisão de 100000/3 é igual a: %d", x);
+    printf("%d", x);
     
     return 0;
 }
